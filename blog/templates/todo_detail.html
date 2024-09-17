@@ -1,0 +1,9 @@
+{% extends "_base.html" %}
+
+{% block content %}
+  {{ todo.id }} <br>
+  {{ todo.content }} <br>
+  {{ todo.date.year }} <br>
+  <a href="{{url_for('todo_delete', id=todo.id)}}">delete</a>
+  <a href="{{url_for('todo_delete',id=todo.id)}}"> todo list</a>
+{% endblock content %}
